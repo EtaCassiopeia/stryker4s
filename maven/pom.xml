@@ -50,6 +50,18 @@
     <prerequisites>
         <maven>3.3.9</maven>
     </prerequisites>
+    <repositories>
+        <repository>
+            <id>snapshots-repo</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
     <properties>
         <encoding>UTF-8</encoding>
         <!-- Scala versions -->
@@ -68,7 +80,7 @@
         <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
         <nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
         <!-- The version that is used for running stryker4s on stryker4s -->
-        <stryker4s-plugin.version>0.8.1</stryker4s-plugin.version>
+        <stryker4s-plugin.version>0.8.1+26-6a37be1d-SNAPSHOT</stryker4s-plugin.version>
     </properties>
     <dependencies>
         <dependency>
